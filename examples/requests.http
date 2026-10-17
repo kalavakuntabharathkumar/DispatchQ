@@ -1,0 +1,11 @@
+### Create a job
+POST http://localhost:3000/jobs
+Content-Type: application/json
+
+{
+  "type": "report.generate",
+  "payload": { "reportId": "demo-001" }
+}
+
+### List jobs
+GET http://localhost:3000/jobs
